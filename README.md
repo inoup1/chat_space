@@ -49,11 +49,11 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|string|null: false|
+|image|string|
 |user_message_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 - belongs_to :group
-- has_many :user_message
+- belongs_to :user
 
 ## userテーブル
 
@@ -67,9 +67,9 @@ Things you may want to cover:
 
 ## Association
 - has_many :members_id
-- has_many :user_message_id
+- has_many :message
 
-## user_messageテーブル
+<!-- ## user_messageテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -79,7 +79,7 @@ Things you may want to cover:
 ## Association
 - belong_to :user
 - belong_to :message
-
+ -->
 
 
 
