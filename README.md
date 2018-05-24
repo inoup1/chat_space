@@ -34,40 +34,42 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :group
 
-## groupテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|member_id|integer|null: false, foreign_key: true|
+|message_id|integer|null: false, foreign_key: true|
 
 ## Association
 - has_many :members
+- has_many :messages
 
-## messageテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
 |image|string|
-|user_message_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+
+## Association
 - belongs_to :group
 - belongs_to :user
 
-## userテーブル
+## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-|user_message_id|integer|null: false, foreign_key: true|
-|members_id|integer|null: false, foreign_key: true|
+message_id|integer|null: false, foreign_key: true|
 
 ## Association
-- has_many :members_id
-- has_many :message
+- has_many :members
+- has_many :messages
 
 <!-- ## user_messageテーブル
 
