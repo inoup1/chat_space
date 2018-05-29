@@ -42,7 +42,7 @@ Things you may want to cover:
 |message_id|integer|null: false, foreign_key: true|
 
 ## Association
-- has_many :members
+- has_many :users, through: :members
 - has_many :messages
 
 ## messagesテーブル
@@ -68,21 +68,8 @@ Things you may want to cover:
 message_id|integer|null: false, foreign_key: true|
 
 ## Association
-- has_many :members
+- has_many :groups, through: :members
 - has_many :messages
-
-<!-- ## user_messageテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|message_id|integer|null: false, foreign_key: true|
-
-## Association
-- belong_to :user
-- belong_to :message
- -->
-
 
 
 
