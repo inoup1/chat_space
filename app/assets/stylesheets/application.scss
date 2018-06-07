@@ -1,59 +1,16 @@
-@import "./reset";
-/*@import "variable";*/
-// @import "./clearfix";
-
-html {
-  height: 100%;
-}
-
-head {
-  background-color: red;
-  font-size: 10px;
-  color: black;
-  margin: 0 auto;
-  height: 30px;
-}
-
-body {
-  background-color: green;
-  font-size: 10px;
-  color: black;
-  margin: 0 auto;
-  height: 100%;
-}
-
-// .left_content {
-//   background-color: blue;
-//   width: 300px;
-//   height: 1000px;
-//   /*margin: 10px auto;*/
-//   font-size: 100px;
-//   float: left;
-// }
-
-// .left_content .header {
-//   background-color: #2f3e51;
-//   width: 300px;
-//   height: 50px;
-// }
-
-// .right_content {
-//   background-color: #AAAAAA;
-//   width: 100vw;
-//   /*margin: 10px auto;*/
-//   height: 100px;
-//   float: left;
-// }
-
-
-// .right_content .header {
-//   background-color: #eeeeee;
-//   width: calc(100vw-300px);
-//   height: 50px;
-// }
-
-// /*$section-color: rgb(30,30,30);
-// section {
-//   background-color: $section-color;
-// }*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
 
